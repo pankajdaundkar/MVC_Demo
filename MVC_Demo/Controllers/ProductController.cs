@@ -18,6 +18,10 @@ namespace MVC_Demo.Controllers
         new Products{Id=5,Name="Laptop",Price=10000}
         };
             ViewData["list"] = products;
+
+            //ProductList New property
+
+            ViewBag.ProductList = products;
             return View();
         }
 
